@@ -1,0 +1,7 @@
+<h1>Books Lists!</h1>
+
+<ul *ngIf="isShowing">
+   <ng-container *ngFor="let singlebook of books">
+      <comp-book-detail [book]="singlebook"></comp-book-detail>
+   </ng-container>
+</ul>
