@@ -1,7 +1,7 @@
-<h1>Books Lists!</h1>
+<p class="text-gray-900 font-bold text-xl text-center mt-5">Books Lists!</p>
 
-<ul *ngIf="isShowing">
+<ul *ngIf="isShowing" class="flex flex-wrap justify-center">
    <ng-container *ngFor="let singlebook of books">
-      <comp-book-detail [book]="singlebook"></comp-book-detail>
+      <comp-book-detail [book]="singlebook" class="w-1/2 p-5 text-center"></comp-book-detail>
    </ng-container>
 </ul>
